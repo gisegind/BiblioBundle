@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/IconoBB.ico">
+    <!-- Enlace a GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Enlace a Font Awesome -->
+    <script src="https://kit.fontawesome.com/5c6b6021ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto BiblioBundle</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/LogoBiblioBundle.png" alt="BiblioBundle Digital" width="350px"></a>
+        <h1 class="hidden">BiblioBundle Digital</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Formulario de Contacto</h2>
+
+        <form action="https://formspree.io/f/xqakzlpr" method="POST" target="_blank">
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label for="nombre">Nombre:</label>
+                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aquí...">
+                <label for="apellido">Apellido:</label>
+                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aquí...">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="usuario@gmail.com">
+                <p>Tengo interés en:</p>
+                <input type="checkbox" name="paquete_bibliografico" id=""
+                    value="fundamentos_de_programacion">Fundamentos de
+                Programación
+                <input type="checkbox" name="paquete_bibliografico" id="" value="construyendo_con_html">Construyendo con
+                HTML
+                <input type="checkbox" name="paquete_bibliografico" id="" value="estilos_con_css">Estilos con CSS
+                <input type="checkbox" name="paquete_bibliografico" id="" value="javascript_en_accion">Javascript en
+                Acción
+                <input type="checkbox" name="paquete_bibliografico" id="" value="base_de_datos_sql">Base de Datos con
+                SQL
+                <input type="checkbox" name="paquete_bibliografico" id="" value="testing_qa">Testing QA al Detalle
+                <input type="checkbox" name="paquete_bibliografico" id="" value="codigo_python">Código Inteligente con
+                Python
+                <input type="checkbox" name="paquete_bibliografico" id="" value="aprendiendo_ingles">Aprendiendo Inglés
+            </fieldset>
+            <fieldset>
+                <legend>Escriba aquí su consulta:</legend>
+                <textarea name="mensaje" rows="10" cols="40"
+                    placeholder="Hola necesito información sobre... ni mombre es: ... mi whatsapp es: ..."></textarea>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </fieldset>
+        </form>
+
+        <h2>Dónde nos encontramos</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7435513942482!2d-58.520861125368704!3d-34.610645757862166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7543a79ccdd%3A0x7444ea80485e6df1!2sPlaza%20shopping%20devoto!5e0!3m2!1ses-419!2sar!4v1727403271999!5m2!1ses-419!2sar"
+            width="400px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+
+    <footer>
+        <div>© 2024 Derechos Reservados - Gisela Gindelli</div>
+        <div class="iconos_redes">
+            <p>Redes Sociales</p>
+            <a href="mailto:ggindelli.materialdeestudio@gmail.com" target="_blank" title="Enviar Mail"
+                class="fas fa-envelope"></a>
+            <a href="https://www.instagram.com" target="_blank" title="Ir a Instagram" class="fab fa-instagram"></a>
+            <a href="https://www.facebook.com" target="_blank" title="Ir a Facebook" class="fab fa-facebook"></a>
+            <a href="https://www.youtube.com" target="_blank" title="Ir a Youtube" class="fab fa-youtube"></a>
+        </div>
+        <div>
+            <p>Métodos Pago</p>
+            <img id="mercado-pago" src="img/mercadopago.png" title="Mercado Pago" alt="Mercado Pago">
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
