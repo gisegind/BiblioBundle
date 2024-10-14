@@ -1,48 +1,76 @@
+/* se importa la fuente exo de googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* :root (Variables globales)  defino aquí la paleta de colores*/
+:root {
+    --primary-color: #2D3250;
+    --secondary-color: #424769;
+    --tertiary-color: #7077A1;
+    --accent-color: #F6B17A;
+    --background-color: #EEEEEE;
+    --text-color: #333333;
+}
+
 * {
+    margin: 0;
+    padding: 0;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+        
 }
 
-/*  #98D9CA color de fondo de foto de cursos */
-.hidden {
-    display: none;
+header, nav , main{
+    background-color: var(--background-color);
+}
+
+header h1 {
+    color: var(--accent-color);
+
+}
+
+header a {
+    text-decoration: none;
+   
+}
+
+nav ul {
+        list-style: none;
+    /*le quito el estilo de viñeta a la lista*/
+}
+
+nav ul li {
+      display: inline;
+    /*en línea los links del nav*/
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    /*le quito le línea a los links y le doy color a la fuente*/
 }
 
 h2 {
-    color: rgb(21, 61, 88);
-}
-
-/*le quito el estilo de viñeta a la lista*/
-nav ul {
-    list-style: none;
-}
-
-/*le quito le línea a los links y le doy color a la fuente*/
-nav ul li a {
-    color: rgb(21, 61, 88);
-    text-decoration: none;
+    color: var(--primary-color)
 }
 
 .boton {
-    display: inline-block
-        /*para que se comporte como boton*/
-    ;
+    display: inline-block;
+    /*para que se comporte como boton*/
     padding: 10px 20px;
     /*espaciado más grande*/
-    background-color: #666666;
-    color: whitesmoke;
+    background-color: var(--accent-color);
+    color: var(--background-color);
     text-decoration: none;
     border-radius: 10px;
-
 }
 
 footer {
-    background-color: rgb(21, 61, 88);
+    background-color: var(--primary-color);
     color: whitesmoke;
 }
 
 .iconos_redes a {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--background-color);
 }
