@@ -6,7 +6,6 @@
     --primary-color: #2D3250;
     --secondary-color: #424769;
     --tertiary-color: #7077A1;
-    --accent-color: #F6B17A;
     --background-color: #EEEEEE;
     --text-color: #333333;
 }
@@ -14,39 +13,82 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* border-box:  Incluye el relleno (padding) y el borde (border) dentro del ancho y alto definidos para un elemento, lo que facilita el control del tamaño final del mismo*/
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-        
+
 }
 
-header, nav , main{
+body {
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*para que el body llegue a la parte inferior*/
 }
+
+header {
+    margin-bottom: 15px;
+}
+
+main {
+    margin-bottom: 15px;
+}
+
+.index-background {
+    background-color: var(--background-color);
+    background-image: url('../assets/img/portada.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+@media (max-width:810px) {
+    .index-background {
+        background-size: cover;
+    }
+}
+
 
 header h1 {
-    color: var(--accent-color);
+    color: var(--primary-color);
 
 }
 
 header a {
     text-decoration: none;
-   
+
 }
 
+nav {
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    
+}
+
+
 nav ul {
-        list-style: none;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    list-style: none;
     /*le quito el estilo de viñeta a la lista*/
 }
 
 nav ul li {
-      display: inline;
+
+    display: inline;
     /*en línea los links del nav*/
 }
 
 nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
+
     /*le quito le línea a los links y le doy color a la fuente*/
 }
 
@@ -54,20 +96,60 @@ h2 {
     color: var(--primary-color)
 }
 
+#tittle{
+    margin-top: 70px;
+    margin-left: 40px;
+}
 .boton {
+    position:absolute;
+    top: 210px;
+    left: 150px;
     display: inline-block;
     /*para que se comporte como boton*/
-    padding: 10px 20px;
+    text-align: center;
+    padding: 7px 12px;
     /*espaciado más grande*/
-    background-color: var(--accent-color);
+    background-color: var(--tertiary-color);
     color: var(--background-color);
     text-decoration: none;
     border-radius: 10px;
 }
 
+#nos-img {
+    transform: scaleX(-1);
+    /*voltea la imagen horizontalmente*/
+    width: 300px;
+}
+
+#wapp {
+    position: fixed; /*para que el elemento te siga en la pantalla*/
+    bottom: 110px;
+    right: 50px;
+}
+
+#wappimg {
+    width: 50px;
+}
+
+.recurso-card {
+    background-color: #7077A1;
+    width: 260px;
+    height: 100px;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--background-color);
+    font-size: larger;
+
+}
+
 footer {
     background-color: var(--primary-color);
     color: whitesmoke;
+    margin-top: auto;
+    /*con flex y con flex direction column necesito que el footer
+    se dirija al pie */
 }
 
 .iconos_redes a {
