@@ -138,7 +138,7 @@ h2 {
     display: inline-flex;
     flex-wrap: wrap;
     /* para organizar los divs en fila y desciendan al siguiente renglón para no desbordar*/
-    justify-content: space-between;
+    justify-content: center
     /*distribuye en el ancho del contenedor*/
 }
 
