@@ -67,7 +67,7 @@ nav {
     display: flex;
     height: 40px;
     margin-top: 10px;
-    
+
 }
 
 
@@ -96,12 +96,13 @@ h2 {
     color: var(--primary-color)
 }
 
-#tittle{
+#tittle {
     margin-top: 70px;
     margin-left: 40px;
 }
+
 .boton {
-    position:absolute;
+    position: absolute;
     top: 210px;
     left: 150px;
     display: inline-block;
@@ -122,13 +123,23 @@ h2 {
 }
 
 #wapp {
-    position: fixed; /*para que el elemento te siga en la pantalla*/
+    position: fixed;
+    /*para que el elemento te siga en la pantalla*/
     bottom: 110px;
     right: 50px;
 }
 
 #wappimg {
     width: 50px;
+}
+
+.contenedor {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* para organizar los divs en fila y desciendan al siguiente renglón para no desbordar*/
+    justify-content: space-between;
+    /*distribuye en el ancho del contenedor*/
 }
 
 .recurso-card {
