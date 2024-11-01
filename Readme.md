@@ -1,7 +1,7 @@
 Título del Proyecto 
 BiblioBundel Digital
 
-Este proyecto es una página web básica desarrollada como parte de un curso de Front-End. 
+Este proyecto es una página web básica desarrollada como parte de un curso de Front-End JS. 
 BiblioBundle Digital. Sitio Web para la adquisición de paquetes bibliográficos en formato PDF. Cuenta con la recopilación de material para el aprendizaje autónomo y cubre las siguientes temáticas:
 
 -Fundamentos de Programación
@@ -15,6 +15,7 @@ BiblioBundle Digital. Sitio Web para la adquisición de paquetes bibliográficos
 
 La página está estructurada con HTML semántico y utiliza las etiquetas `<header>`, `<nav>`,  `<main>`, y `<footer>` para organizar el contenido. 
 La estructura de la web index.html (principal), recursos.html (contenido de descarga por temáticas), nosotros.html, contacto.html
+
 
 
  

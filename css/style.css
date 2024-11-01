@@ -7,7 +7,7 @@
     --secondary-color: #424769;
     --tertiary-color: #7077A1;
     --background-color: #EEEEEE;
-    --text-color: #333333;
+
 }
 
 * {
@@ -37,6 +37,11 @@ main {
     margin-bottom: 15px;
 }
 
+form {
+    color: var(--primary-color);
+}
+
+
 .index-background {
     background-color: var(--background-color);
     background-image: url('../assets/img/portada.png');
@@ -46,21 +51,18 @@ main {
     height: 100vh;
 }
 
-@media (max-width:810px) {
-    .index-background {
-        background-size: cover;
-    }
-}
-
 
 header h1 {
     color: var(--primary-color);
 
 }
 
+header h1:hover {
+    color: var(--secondary-color);
+}
+
 header a {
     text-decoration: none;
-
 }
 
 nav {
@@ -69,7 +71,6 @@ nav {
     margin-top: 10px;
 
 }
-
 
 nav ul {
     position: absolute;
@@ -80,17 +81,20 @@ nav ul {
 }
 
 nav ul li {
-
     display: inline;
     /*en línea los links del nav*/
 }
 
 nav ul li a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
-
     /*le quito le línea a los links y le doy color a la fuente*/
 }
+
+nav ul li a:hover {
+    color: var(--secondary-color)
+}
+
 
 h2 {
     color: var(--primary-color)
@@ -108,7 +112,7 @@ h2 {
     display: inline-block;
     /*para que se comporte como boton*/
     text-align: center;
-    padding: 7px 12px;
+    padding: 6px 12px;
     /*espaciado más grande*/
     background-color: var(--tertiary-color);
     color: var(--background-color);
@@ -116,16 +120,24 @@ h2 {
     border-radius: 10px;
 }
 
+/*cambia el color cuando pasa el mouse*/
+.boton:hover {
+    background-color: var(--primary-color);
+}
+
 #nos-img {
+    max-width: 400px;
+}
+
+#nos-img:hover {
     transform: scaleX(-1);
     /*voltea la imagen horizontalmente*/
-    width: 300px;
 }
 
 #wapp {
     position: fixed;
     /*para que el elemento te siga en la pantalla*/
-    bottom: 110px;
+    bottom: 140px;
     right: 50px;
 }
 
@@ -139,7 +151,7 @@ h2 {
     flex-wrap: wrap;
     /* para organizar los divs en fila y desciendan al siguiente renglón para no desbordar*/
     justify-content: center
-    /*distribuye en el ancho del contenedor*/
+        /*distribuye en el ancho del contenedor*/
 }
 
 .recurso-card {
@@ -152,18 +164,237 @@ h2 {
     text-align: center;
     color: var(--background-color);
     font-size: larger;
+}
+
+.recurso-card a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+/*cambia el color cuando pasa el mouse*/
+.recurso-card:hover {
+    background-color: var(--primary-color);
+}
+
+.nosotros-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* dos columnas de igual tamaño */
+    grid-template-rows: auto auto;
+    /* dos filas automáticas */
+    gap: 5px;
+}
+
+.nosotros_texto {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--tertiary-color);
+    margin: 5px 10px 5px 10px;
+    /*atajo top right bottom left*/
+    grid-column: span 2;
+    /* ocupa ambas columnas en la primera fila */
+    gap: 5px;
+    /* espacio entre filas y columnas*/
+}
+
+.nosotros_texto p {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#agencia {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+#agencia:hover {
+    color: var(--secondary-color)
+}
+
+.nosotros_img {
+    border: solid 1px var(--tertiary-color);
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+}
+
+.nosotros_iframe {
+    border: solid 1px var(--tertiary-color);
+    border-radius: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    overflow: hidden;
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 25px auto 10px auto;
+    /*para centrar el formulario en el medio de la pantalla*/
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(45, 50, 80, 0.1);
 
 }
 
-footer {
+fieldset {
+    border: none;
+    /*le saco el borde por defecto*/
+    margin-bottom: 20px;
+    /*un pequeño espaciado entre los campos*/
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    /*que los campos de entrada ocupen todo el ancho disponible*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    /* espacio entre el checkbox y su etiqueta */
+}
+
+.form_boton {
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    /*espacio entre los dos botones*/
+    background-color: var(--tertiary-color);
+    color: var(--background-color);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.form_boton:hover {
+    background-color: var(--primary-color);
+}
+
+/*-------------FIN FORM-------*/
+
+.ubicacion {
+    width: 90%;
+    margin: 15px auto;
+    justify-content: center;
+
+}
+
+.ubicacion iframe {
+    width: 100%;
+}
+
+.footer {
+    height: 120px;
     background-color: var(--primary-color);
     color: whitesmoke;
+    text-align: center;
     margin-top: auto;
-    /*con flex y con flex direction column necesito que el footer
-    se dirija al pie */
+    /*se ajusta automaticamente para ocupar el espacio disponible*/
+    display: flex;
+    flex-direction: column;
+    /*el columna por defecto*/
+    align-items: center;
+    /*los elementos centrados*/
+    padding: 5px;
 }
 
-.iconos_redes a {
+
+.redes a {
     text-decoration: none;
     color: var(--background-color);
+    padding: 1px;
+}
+
+#redes_icon {
+    font-size: 20px;
+}
+
+.cafecito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafecito_icon {
+    display: flex;
+    align-items: center;
+
+
+}
+
+/*Media Queries*/
+@media (max-width:600px) {
+    form {
+        width: 400px;
+    }
+ 
+
+}
+
+@media (max-width:810px) {
+    .index-background {
+        background-size: cover;
+
+    }
+
+    .nosotros-container {
+        display: grid;
+        grid-template-columns: 1fr; /*que el contenido de la fila ocupe toda la columna, 1fr una sola columna*/
+        grid-template-rows: 1fr 1fr 1fr /* 3 filas que ocupan 1fr*/
+    }
+
+    .nosotros_texto,
+    .nosotros_img,
+    .nosotros_iframe { grid-column: span 1; /*ahora ocupa todo una sola columna*/
+        margin: 3px;
+        
+
+}
+
+@media (min-width:1024px) {
+    .footer {
+        flex-direction: row;
+        /*en fila para dispositivos grandes*/
+        justify-content: space-between;
+
+    }
+
+    .derechos {
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+        margin-bottom: 8px;
+    }
+
+    .cafecito {
+        margin-right: 25px;
+    }
+
+    form {
+        max-width: 900px;
+    }
+
 }

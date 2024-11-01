@@ -30,7 +30,6 @@
     </header>
     <main>
         <h2>Formulario de Contacto</h2>
-
         <form action="https://formspree.io/f/xqakzlpr" method="POST" target="_blank">
             <fieldset>
                 <legend>Datos de Contacto</legend>
@@ -62,34 +61,39 @@
                 <legend>Escriba aquí su mensaje:</legend>
                 <textarea name="mensaje" rows="10" cols="40"
                     placeholder="Hola necesito información sobre... mi mombre es: ... mi whatsapp es: ..."></textarea>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+                <button type="submit" class="form_boton">Enviar</button>
+                <button type="reset" class="form_boton">Borrar</button>
             </fieldset>
         </form>
 
         <h2>Dónde nos encontramos</h2>
-        <iframe
+        <div class="ubicacion"><iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7435513942482!2d-58.520861125368704!3d-34.610645757862166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7543a79ccdd%3A0x7444ea80485e6df1!2sPlaza%20shopping%20devoto!5e0!3m2!1ses-419!2sar!4v1727403271999!5m2!1ses-419!2sar"
             width="400px" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        
 
     </main>
 
-    <footer>
-        <div>© 2024 Derechos Reservados - Gisela Gindelli</div>
-        <div class="iconos_redes">
-            <p>Redes Sociales</p>
+    <footer class="footer">
+        <div class="derechos">
+            © 2024 Derechos Reservados <br>BiblioBundle by Gisela Gindelli
+        </div>
+        <div class="redes" id="redes_icon">
             <a href="mailto:ggindelli.materialdeestudio@gmail.com" target="_blank" title="Enviar Mail"
                 class="fas fa-envelope"></a>
             <a href="https://www.instagram.com" target="_blank" title="Ir a Instagram"><i
                     class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com" target="_blank" title="Ir a Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com" target="_blank" title="Ir a Youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/gisela-gindelli/" target="_blank" title="Ir a LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="iconos_redes">
-            <p>Invitame un Café</p>
-            <a href="https://www.mercadopago.com" target="_blank" title="Ir a Mercadopago"><i
-                    class="fa-sharp-duotone fa-solid fa-mug-hot"></i></a>
+        <div class="cafecito">
+            <p>Cafecito</p>
+            <div class="cafecito_icon redes" id="redes_icon">
+                <a href="https://www.mercadopago.com" target="_blank" title="Quiero contribuir"><i
+                        class="fa-sharp-duotone fa-solid fa-mug-hot"></i></a>
+            </div>
         </div>
 
     </footer>
