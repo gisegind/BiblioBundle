@@ -318,14 +318,14 @@ input[type="checkbox"] {
     /*el columna por defecto*/
     align-items: center;
     /*los elementos centrados*/
-    padding: 5px;
+  
 }
 
 
 .redes a {
     text-decoration: none;
     color: var(--background-color);
-    padding: 1px;
+    padding: 3px;
 }
 
 #redes_icon {
@@ -369,7 +369,7 @@ input[type="checkbox"] {
     .nosotros_texto,
     .nosotros_img,
     .nosotros_iframe { grid-column: span 1; /*ahora ocupa todo una sola columna*/
-        margin: 3px;
+        margin: 3px; }
         
 
 }
@@ -385,12 +385,12 @@ input[type="checkbox"] {
     .derechos {
         display: flex;
         justify-content: center;
-        margin-left: 25px;
+        margin-left: 40px;
         margin-bottom: 8px;
     }
 
     .cafecito {
-        margin-right: 25px;
+        margin-right: 40px;
     }
 
     form {
