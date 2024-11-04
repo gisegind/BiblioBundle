@@ -347,6 +347,23 @@ input[type="checkbox"] {
 
 /*Media Queries*/
 @media (max-width:600px) {
+    .index-background {
+        background-image: url('../assets/img/portada_600.png');
+       
+    }
+    nav ul {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        list-style: none;
+        /*le quito el estilo de viñeta a la lista*/
+    }
+
+    .boton {
+        position: absolute;
+        top: 230px;
+        left: 70px;}
+
     form {
         width: 400px;
     }
