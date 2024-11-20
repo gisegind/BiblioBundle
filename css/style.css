@@ -357,6 +357,10 @@ input[type="checkbox"] {
 
 /*Media Queries*/
 @media (max-width:400px) {
+    header h1 { margin-left: 10px;}
+    nav ul li {
+        margin-right: 4px; /* Espaciado entre elementos */
+    }
     #wapp {
         position: fixed;
         /*para que el elemento te siga en la pantalla*/
