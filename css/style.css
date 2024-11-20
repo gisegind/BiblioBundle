@@ -54,6 +54,7 @@ form {
 
 header h1 {
     color: var(--primary-color);
+    margin-left: 30px;
 
 }
 
@@ -83,12 +84,14 @@ nav ul {
 nav ul li {
     display: inline;
     /*en línea los links del nav*/
+    margin-right: 20px; /* Espaciado entre elementos */
 }
 
 nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
     /*le quito le línea a los links y le doy color a la fuente*/
+    font-weight: 600; /* Hace la fuente más gruesa */
 }
 
 nav ul li a:hover {
@@ -97,7 +100,12 @@ nav ul li a:hover {
 
 
 h2 {
+
     color: var(--primary-color)
+}
+
+.center {
+    text-align: center;
 }
 
 #tittle {
@@ -355,6 +363,7 @@ input[type="checkbox"] {
         bottom: 120px;
         right: 20px;
     }
+
 }
 
 @media (max-width:600px) {
@@ -381,6 +390,45 @@ input[type="checkbox"] {
         width: 320px;
     }
 
+    
+}
+
+@media (max-width:810px) {
+    .index-background {
+        background-size: cover;
+
+    }
+
+    .nosotros-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*que el contenido de la fila ocupe toda la columna, 1fr una sola columna*/
+        grid-template-rows: 1fr 1fr 1fr;
+        /* 3 filas que ocupan 1fr*/
+        justify-items: center;
+        /* Centra horizontalmente cada ítem */
+
+
+    }
+
+    .nosotros_texto,
+    .nosotros_img,
+    .nosotros_iframe {
+        max-width: 90%;
+        grid-column: span 1;
+        /*ahora ocupa todo una sola columna*/
+        margin: 3px;
+
+    }
+
+    #nos-img {
+        width: 250px;
+    }
+
+    
+}
+
+@media (max-width:1023px) {
     .derechos,
     .redes {
         margin-top: 10px;
@@ -394,32 +442,6 @@ input[type="checkbox"] {
         margin: 0px;
         padding-left: 10px;
     }
-
-
-}
-
-@media (max-width:810px) {
-    .index-background {
-        background-size: cover;
-
-    }
-
-    .nosotros-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        /*que el contenido de la fila ocupe toda la columna, 1fr una sola columna*/
-        grid-template-rows: 1fr 1fr 1fr
-            /* 3 filas que ocupan 1fr*/
-    }
-
-    .nosotros_texto,
-    .nosotros_img,
-    .nosotros_iframe {
-        grid-column: span 1;
-        /*ahora ocupa todo una sola columna*/
-        margin: 3px;
-    }
-
 
 }
 
@@ -438,8 +460,19 @@ input[type="checkbox"] {
         margin-bottom: 8px;
     }
 
+    .redes {
+        margin-left: -175px;
+        }
+
+    
+
+    .cafe {
+        margin-left: 0;
+    }
+
     .cafecito {
         margin-right: 40px;
+
     }
 
     form {
