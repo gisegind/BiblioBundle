@@ -98,6 +98,18 @@ nav ul li a:hover {
     color: var(--secondary-color)
 }
 
+#icono-hamburguesa{
+    display: none;
+    position: absolute;
+    right: 20px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#lista-hamburguesa{
+    display: flex;
+    flex-direction: row;
+}
 
 h2 {
 
@@ -375,7 +387,28 @@ input[type="checkbox"] {
         background-image: url('../assets/img/portada_600.png');
 
     }
+    #icono-hamburguesa {
+        display: block;
+       
+    }
+    #lista-hamburguesa{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: var(--background-color);
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #lista-hamburguesa.mostrar{
+        display: flex;
+    }
 
+    #lista-hamburguesa li {
+        margin: 10px 0;
+    }
     nav ul {
         position: absolute;
         top: 40px;
