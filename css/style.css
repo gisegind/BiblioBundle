@@ -84,21 +84,23 @@ nav ul {
 nav ul li {
     display: inline;
     /*en línea los links del nav*/
-    margin-right: 20px; /* Espaciado entre elementos */
+    margin-right: 20px;
+    /* Espaciado entre elementos */
 }
 
 nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
     /*le quito le línea a los links y le doy color a la fuente*/
-    font-weight: 600; /* Hace la fuente más gruesa */
+    font-weight: 600;
+    /* Hace la fuente más gruesa */
 }
 
 nav ul li a:hover {
     color: var(--secondary-color)
 }
 
-#icono-hamburguesa{
+#icono-hamburguesa {
     display: none;
     position: absolute;
     right: 20px;
@@ -106,7 +108,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-#lista-hamburguesa{
+#lista-hamburguesa {
     display: flex;
     flex-direction: row;
 }
@@ -315,6 +317,33 @@ input[type="checkbox"] {
     background-color: var(--primary-color);
 }
 
+.mensaje-emergente {
+    display: none; /*se mantiene oculto por defecto*/
+    position: fixed; /*que no se mueva mientras la página se desplaza*/
+    top: 10%;
+    left:50%;
+    transform: translateX(-50%); /* Ajusta el centro del elemento */
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+    z-index: 1000; /*para que quede por encima de otros elementos*/
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.mensaje-emergente.visible {
+    display: block;
+}
+
+.mensaje-emergente p {
+    margin: 0;
+    cursor:pointer /* indico con el cursor que hay una acción sobre el botón */
+    
+}
+
 /*-------------FIN FORM-------*/
 
 .ubicacion {
@@ -369,16 +398,22 @@ input[type="checkbox"] {
 
 /*Media Queries*/
 @media (max-width:400px) {
-    header h1 { margin-left: 10px;}
-    nav ul li {
-        margin-right: 4px; /* Espaciado entre elementos */
+    header h1 {
+        margin-left: 10px;
     }
+
+    nav ul li {
+        margin-right: 4px;
+        /* Espaciado entre elementos */
+    }
+
     #wapp {
         position: fixed;
         /*para que el elemento te siga en la pantalla*/
         bottom: 120px;
         right: 20px;
     }
+
 
 }
 
@@ -387,11 +422,13 @@ input[type="checkbox"] {
         background-image: url('../assets/img/portada_600.png');
 
     }
+
     #icono-hamburguesa {
         display: block;
-       
+
     }
-    #lista-hamburguesa{
+
+    #lista-hamburguesa {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -401,14 +438,15 @@ input[type="checkbox"] {
         width: 100%;
         padding: 10px;
     }
-    
-    #lista-hamburguesa.mostrar{
+
+    #lista-hamburguesa.mostrar {
         display: flex;
     }
 
     #lista-hamburguesa li {
         margin: 10px 0;
     }
+
     nav ul {
         position: absolute;
         top: 40px;
@@ -426,8 +464,11 @@ input[type="checkbox"] {
     form {
         width: 320px;
     }
+    .mensaje-emergente{
+        font-size: 14px;
+    }
 
-    
+
 }
 
 @media (max-width:810px) {
@@ -462,10 +503,10 @@ input[type="checkbox"] {
         width: 250px;
     }
 
-    
 }
 
 @media (max-width:1023px) {
+
     .derechos,
     .redes {
         margin-top: 10px;
@@ -499,9 +540,9 @@ input[type="checkbox"] {
 
     .redes {
         margin-left: -175px;
-        }
+    }
 
-    
+
 
     .cafe {
         margin-left: 0;

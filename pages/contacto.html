@@ -32,42 +32,43 @@
     </header>
     <main>
         <h2 class="center">Formulario de Contacto</h2>
-        <form action="https://formspree.io/f/xqakzlpr" method="POST" target="_blank">
+        <form id="formulario-contacto" action="https://formspree.io/f/xqakzlpr" method="POST" target="_blank">
             <fieldset>
                 <legend>Datos de Contacto</legend>
                 <label for="nombre">Nombre:</label>
-                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aquí...">
+                <input size="30" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aquí...">
                 <label for="apellido">Apellido:</label>
-                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aquí...">
+                <input size="30" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido aquí...">
                 <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="usuario@gmail.com">
+                <input type="email" name="email" id="email" placeholder="usuario@gmail.com">
                 <p>Tengo interés en:</p>
-                <input type="checkbox" name="paquete_bibliografico" id=""
+                <input type="checkbox" name="paquete_bibliografico" id="opcion1"
                     value="fundamentos_de_programacion">Fundamentos de
                 Programación
-                <input type="checkbox" name="paquete_bibliografico" id="" value="construyendo_con_html">Construyendo con
+                <input type="checkbox" name="paquete_bibliografico" id="opcion2" value="construyendo_con_html">Construyendo con
                 HTML
-                <input type="checkbox" name="paquete_bibliografico" id="" value="estilos_con_css">Estilos con CSS
-                <input type="checkbox" name="paquete_bibliografico" id="" value="javascript_en_accion">Javascript en
+                <input type="checkbox" name="paquete_bibliografico" id="opcion3" value="estilos_con_css">Estilos con CSS
+                <input type="checkbox" name="paquete_bibliografico" id="opcion4" value="javascript_en_accion">Javascript en
                 Acción
-                <input type="checkbox" name="paquete_bibliografico" id="" value="base_de_datos_sql">Base de Datos con
+                <input type="checkbox" name="paquete_bibliografico" id="opcion5" value="base_de_datos_sql">Base de Datos con
                 SQL
-                <input type="checkbox" name="paquete_bibliografico" id="" value="testing_qa">Testing QA al Detalle
-                <input type="checkbox" name="paquete_bibliografico" id="" value="git_github">Todo Repo Git GitHub
-                <input type="checkbox" name="paquete_bibliografico" id="" value="codigo_python">Código Inteligente con
+                <input type="checkbox" name="paquete_bibliografico" id="opcion6" value="testing_qa">Testing QA al Detalle
+                <input type="checkbox" name="paquete_bibliografico" id="opcion7" value="git_github">Todo Repo Git GitHub
+                <input type="checkbox" name="paquete_bibliografico" id="opcion8" value="codigo_python">Código Inteligente con
                 Python
-                <input type="checkbox" name="paquete_bibliografico" id="" value="aprendiendo_ingles">Aprendiendo Inglés
-                <input type="checkbox" name="paquete_bibliografico" id="" value="mas_bibliografia">Quiero que agreguen
+                <input type="checkbox" name="paquete_bibliografico" id="opcion9" value="aprendiendo_ingles">Aprendiendo Inglés
+                <input type="checkbox" name="paquete_bibliografico" id="opcion10" value="mas_bibliografia">Quiero que agreguen
                 Nuevos Temas
             </fieldset>
             <fieldset>
                 <legend>Escriba aquí su mensaje:</legend>
-                <textarea name="mensaje" rows="10" cols="40"
+                <textarea name="mensaje" id="mensaje"  rows="10" cols="40"
                     placeholder="Hola necesito información sobre... mi mombre es: ... mi whatsapp es: ..."></textarea>
                 <button type="submit" class="form_boton">Enviar</button>
                 <button type="reset" class="form_boton">Borrar</button>
             </fieldset>
         </form>
+        
 
         <h2 class="center">Dónde nos encontramos</h2>
         <div class="ubicacion"><iframe
@@ -75,6 +76,9 @@
                 width="400px" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
+    <div id="mensaje-emergente" class="mensaje-emergente oculto">
+        <p id="mensaje-texto"></p>
+    </div>
 
     </main>
 
