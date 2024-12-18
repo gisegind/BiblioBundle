@@ -32,7 +32,7 @@
     </header>
     <main>
         <h2 class="center">Nosotros</h2>
-        <div class="nosotros-container">
+            <div class="nosotros-container">
             <div class="nosotros_texto">
                 <p> <br>
                     Hola, soy Gisela y estoy cursando Front End JS en <b>Talento Tech</b>. Este es un sitio pensado en
@@ -50,7 +50,15 @@
 
                 </p>
             </div>
-            <div class="nosotros_img"> <img id="nos-img" src="../assets/img/feriavirtual.png" alt="Recursos Educativos">
+            <div class="nosotros_quiz">
+                <h2>¿Jugamos?</h2><br>
+                <div id="pregunta"></div>
+                <button id="op1" class="opcion" ></button>
+                <button id="op2" class="opcion" ></button>
+                <button id="op3" class="opcion" ></button>
+                <!-- con un click ejecuto la función siguientePregunta -->
+                <button id="proxima" onclick="siguientePregunta()">Siguiente</button>
+                <p id="puntos">Puntaje: 0</p>
             </div>
             <div class="nosotros_iframe"><iframe width="700px" height="250px"
                     src="https://www.youtube.com/embed/z-nA1LfmNJ8" title="BiblioBundle demo" frameborder="0"

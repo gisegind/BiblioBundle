@@ -113,6 +113,8 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
+
+
 h2 {
 
     color: var(--primary-color)
@@ -129,8 +131,8 @@ h2 {
 
 .boton {
     position: absolute;
-    top: 210px;
-    left: 150px;
+    top: 220px;
+    left: 100px;
     display: inline-block;
     /*para que se comporte como boton*/
     text-align: center;
@@ -140,6 +142,25 @@ h2 {
     color: var(--background-color);
     text-decoration: none;
     border-radius: 10px;
+}
+
+.login {
+    border: none;
+    top: 13px;
+    left: 270px;
+}
+
+
+#api {
+    position: absolute;
+    color: var(--tertiary-color);
+    left: 20px;
+    bottom: 120px;
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    padding: 15px;
+
 }
 
 /*cambia el color cuando pasa el mouse*/
@@ -236,16 +257,64 @@ h2 {
     color: var(--secondary-color)
 }
 
-.nosotros_img {
+.nosotros_quiz {
+    color: var(--secondary-color);
     border: solid 1px var(--tertiary-color);
     border-radius: 10px;
     margin-left: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     /* centra horizontalmente */
     align-items: center;
     /* centra verticalmente */
+    padding: 20px ;
 }
+
+#pregunta { font-size: large;
+text-align: center;}
+
+.opcion {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nosotros_quiz button {
+    border-radius: 5px;
+    color: var(--tertiary-color);
+    display: inline-block;
+    margin-top: 10px;
+}
+.nosotros_quiz button:hover {
+    box-shadow: 0 4px 8px var(--primary-color); /*sombra*/
+    transform: scale(1.1); /* zoom */
+
+}
+#proxima { 
+    margin-bottom: 10px;
+    border: none;
+    /*para que se comporte como boton*/
+    text-align: center;
+    padding: 6px 12px;
+    /*espaciado más grande*/
+    background-color: var(--tertiary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 10px;}
+
+#proxima:hover {
+    background-color: var(--primary-color);
+    box-shadow: none;
+    transform: none
+}
+
+#puntos { font-weight: 520;}
+
+
 
 .nosotros_iframe {
     border: solid 1px var(--tertiary-color);
@@ -318,16 +387,20 @@ input[type="checkbox"] {
 }
 
 .mensaje-emergente {
-    display: none; /*se mantiene oculto por defecto*/
-    position: fixed; /*que no se mueva mientras la página se desplaza*/
+    display: none;
+    /*se mantiene oculto por defecto*/
+    position: fixed;
+    /*que no se mueva mientras la página se desplaza*/
     top: 10%;
-    left:50%;
-    transform: translateX(-50%); /* Ajusta el centro del elemento */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Ajusta el centro del elemento */
     background-color: var(--secondary-color);
     color: var(--background-color);
     padding: 15px 20px;
     border-radius: 10px;
-    z-index: 1000; /*para que quede por encima de otros elementos*/
+    z-index: 1000;
+    /*para que quede por encima de otros elementos*/
     font-size: 16px;
     text-align: center;
     width: 100%;
@@ -340,8 +413,9 @@ input[type="checkbox"] {
 
 .mensaje-emergente p {
     margin: 0;
-    cursor:pointer /* indico con el cursor que hay una acción sobre el botón */
-    
+    cursor: pointer
+        /* indico con el cursor que hay una acción sobre el botón */
+
 }
 
 /*-------------FIN FORM-------*/
@@ -407,6 +481,8 @@ input[type="checkbox"] {
         /* Espaciado entre elementos */
     }
 
+    
+
     #wapp {
         position: fixed;
         /*para que el elemento te siga en la pantalla*/
@@ -455,16 +531,27 @@ input[type="checkbox"] {
         /*le quito el estilo de viñeta a la lista*/
     }
 
+
     .boton {
         position: absolute;
-        top: 230px;
+        top: 250px;
         left: 70px;
     }
 
+    /* en mobile oculto la api porque rompe el estilo */
+    #api {display: none;}
+
+    .login {
+        top: 13px;
+        left: 270px;
+    }
+
+   
     form {
         width: 320px;
     }
-    .mensaje-emergente{
+
+    .mensaje-emergente {
         font-size: 14px;
     }
 
@@ -490,7 +577,7 @@ input[type="checkbox"] {
     }
 
     .nosotros_texto,
-    .nosotros_img,
+    .nosotros_quiz,
     .nosotros_iframe {
         max-width: 90%;
         grid-column: span 1;
@@ -524,6 +611,10 @@ input[type="checkbox"] {
 }
 
 @media (min-width:1024px) {
+    .contenedor {
+       
+            margin-top: 40px;
+    }
     .footer {
         flex-direction: row;
         /*en fila para dispositivos grandes*/
@@ -557,4 +648,16 @@ input[type="checkbox"] {
         max-width: 900px;
     }
 
+}
+
+@media (min-width:1900px) {
+    .contenedor {
+       
+            margin-top: 90px;
+    }
+
+    .recurso-card {
+        font-size: xx-large;
+        width: 280px;
+        height: 180px;}
 }
