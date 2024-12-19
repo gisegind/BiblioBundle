@@ -45,11 +45,37 @@ const preguntas = [
 
     },
     {
+        pregunta: "Cuál es el propósito de las etiquetas semánticas en HTML",
+        opciones: ["Describir el propósito de diferentes partes de una página web", "Definir iteracciones del usuario con la página", "Conectar el Front-End con el Back-End"],
+        correcta: 0
+
+    },
+    {
+        pregunta: "Cuál de los siguientes tipo de entrada permite la selección de una opción entre múltiples en un formulario HTML",
+        opciones: ["type='text'", "type='submit'", "type='radio'"],
+        correcta: 2
+
+    },
+    {
         pregunta: "Cual es la diferencia de utilizar Grid frente a Flexbox",
         opciones: ["Grid es unidimensional", "Grid trabaja tanto con filas como con columnas simultáneamente", "Flexbox no es compatible con todos los dispositivos"],
         correcta: 1
 
     },
+
+    {
+        pregunta: "Qué propiedad de Flexbox se utiliza para distribuir el espacio entre los items a lo largo del eje principal",
+        opciones: ["justify-content", "align-items", "flex-direction"],
+        correcta: 0
+
+    },
+    {
+        pregunta: "Cuál es la diferencia entre el scope global y el local en JavaScript",
+        opciones: ["No hay diferencia", "Las variables globales están disponibles en todo el programa, las locales solo dentro de su función", "Las variables locales no se pueden modificar, las globales si"],
+        correcta: 1
+
+    },
+    
 
     {
         pregunta: "Qué función se utiliza para manejar la respuesta de una API en formato JSON cuando se utiliza fetch()",
@@ -112,7 +138,7 @@ function siguientePregunta(){
     if(respuestaActual < preguntas.length){
         descargarPreguntas();
     }else{
-        alert ("¡Haz completado el desafía! tu puntaje es: " + puntaje + " de " +preguntas.length)
+        alert ("¡Haz completado el desafío! tu puntaje es: " + puntaje + " de " +preguntas.length)
     }
 }
 

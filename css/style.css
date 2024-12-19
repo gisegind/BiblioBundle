@@ -613,7 +613,12 @@ input[type="checkbox"] {
 @media (min-width:1024px) {
     .contenedor {
        
-            margin-top: 40px;
+            margin-top: 60px;
+    }
+    .recurso-card{
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Opcional: Alinea horizontalmente */
     }
     .footer {
         flex-direction: row;
@@ -653,6 +658,13 @@ input[type="checkbox"] {
     body {
         font-size: 130%; /* Incrementa el tamaño en porcentaje */
       }
+      nav {
+        height: 70px;
+      }
+      .boton {
+        top: 260px;
+        left: 150px;
+    }
 }
 
 @media (min-width:1900px) {
@@ -663,10 +675,7 @@ input[type="checkbox"] {
        
             margin-top: 90px;
     }
-    .boton {
-        top: 260px;
-        left: 150px;
-    }
+    
 
     .recurso-card {
         font-size: xx-large;
