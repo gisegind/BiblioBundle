@@ -649,11 +649,23 @@ input[type="checkbox"] {
     }
 
 }
+@media (min-width:1440px) {
+    body {
+        font-size: 130%; /* Incrementa el tamaño en porcentaje */
+      }
+}
 
 @media (min-width:1900px) {
+    body {
+        font-size: 150%; /* Incrementa el tamaño en porcentaje */
+      }
     .contenedor {
        
             margin-top: 90px;
+    }
+    .boton {
+        top: 260px;
+        left: 150px;
     }
 
     .recurso-card {
@@ -661,3 +673,6 @@ input[type="checkbox"] {
         width: 280px;
         height: 180px;}
 }
+
+
+
