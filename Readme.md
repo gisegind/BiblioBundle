@@ -21,6 +21,7 @@ Se implementa para Mobile botón Menú Hamburguesa que despliega la barra de nav
 Se agregan validaciones al formulario de contacto.
 Se consume un archivo JSON que muestra aleatoriamente frases motivadoras al cargar la página principal.
 En la sección nosotros se agrega un mini juego. Arreglo preguntas donde cada objeto representa una pregunta (pregunta, opciones, correcta). En cada pregunta se muestra un alert si es correcta o incorrecta. Si es correcta se incrementa el puntaje. Al finalizar las preguntas se da el puntaje total.
+Se implementa botón interactivo con JS para cambiar la paleta de colores.
 
 
 

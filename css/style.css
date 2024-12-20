@@ -10,6 +10,13 @@
 
 }
 
+/* :root {
+    --primary-color: #D48BA2; 
+    --secondary-color: #E8AAB8;
+    --tertiary-color: #F3CDD9; 
+    --background-color: #EEEEEE; 
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +34,21 @@ body {
     flex-direction: column;
     min-height: 100vh;
     /*para que el body llegue a la parte inferior*/
+}
+
+#boton-modo button {
+    position: absolute;
+    color: var(--primary-color);
+    border: none;
+    font-size: large;
+    top: 13px;
+    left: 270px;
+
+}
+
+#boton-modo button:hover {
+    color: var(--secondary-color);
+
 }
 
 header {
@@ -106,6 +128,7 @@ nav ul li a:hover {
     right: 20px;
     font-size: 26px;
     cursor: pointer;
+    color: var(--primary-color)
 }
 
 #lista-hamburguesa {
@@ -198,7 +221,7 @@ h2 {
 }
 
 .recurso-card {
-    background-color: #7077A1;
+    background-color: var(--tertiary-color);
     width: 260px;
     height: 100px;
     margin: 10px;
@@ -268,11 +291,13 @@ h2 {
     /* centra horizontalmente */
     align-items: center;
     /* centra verticalmente */
-    padding: 20px ;
+    padding: 20px;
 }
 
-#pregunta { font-size: large;
-text-align: center;}
+#pregunta {
+    font-size: large;
+    text-align: center;
+}
 
 .opcion {
     margin: 10px;
@@ -289,12 +314,16 @@ text-align: center;}
     display: inline-block;
     margin-top: 10px;
 }
+
 .nosotros_quiz button:hover {
-    box-shadow: 0 4px 8px var(--primary-color); /*sombra*/
-    transform: scale(1.1); /* zoom */
+    box-shadow: 0 4px 8px var(--primary-color);
+    /*sombra*/
+    transform: scale(1.1);
+    /* zoom */
 
 }
-#proxima { 
+
+#proxima {
     margin-bottom: 10px;
     border: none;
     /*para que se comporte como boton*/
@@ -304,7 +333,8 @@ text-align: center;}
     background-color: var(--tertiary-color);
     color: var(--background-color);
     text-decoration: none;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 
 #proxima:hover {
     background-color: var(--primary-color);
@@ -312,7 +342,9 @@ text-align: center;}
     transform: none
 }
 
-#puntos { font-weight: 520;}
+#puntos {
+    font-weight: 520;
+}
 
 
 
@@ -481,7 +513,12 @@ input[type="checkbox"] {
         /* Espaciado entre elementos */
     }
 
-    
+    #boton-modo button {
+        font-size: 19px;
+        left: 245px;
+    }
+
+
 
     #wapp {
         position: fixed;
@@ -539,14 +576,16 @@ input[type="checkbox"] {
     }
 
     /* en mobile oculto la api porque rompe el estilo */
-    #api {display: none;}
+    #api {
+        display: none;
+    }
 
     .login {
         top: 13px;
         left: 270px;
     }
 
-   
+
     form {
         width: 320px;
     }
@@ -612,14 +651,17 @@ input[type="checkbox"] {
 
 @media (min-width:1024px) {
     .contenedor {
-       
-            margin-top: 60px;
+
+        margin-top: 30px;
     }
-    .recurso-card{
+
+    .recurso-card {
         display: flex;
         align-items: center;
-        justify-content: center; /* Opcional: Alinea horizontalmente */
+        justify-content: center;
+        /* Opcional: Alinea horizontalmente */
     }
+
     .footer {
         flex-direction: row;
         /*en fila para dispositivos grandes*/
@@ -654,34 +696,51 @@ input[type="checkbox"] {
     }
 
 }
+
 @media (min-width:1440px) {
     body {
-        font-size: 130%; /* Incrementa el tamaño en porcentaje */
-      }
-      nav {
+        font-size: 130%;
+        /* Incrementa el tamaño en porcentaje */
+    }
+
+    nav {
         height: 70px;
-      }
-      .boton {
+    }
+
+    #boton-modo button {
+        top: 16px;
+        left: 340px;
+        font-size: x-large;
+    }
+
+    .boton {
         top: 260px;
         left: 150px;
+    }
+
+    .contenedor {
+
+        margin-top: 90px;
     }
 }
 
 @media (min-width:1900px) {
     body {
-        font-size: 150%; /* Incrementa el tamaño en porcentaje */
-      }
-    .contenedor {
-       
-            margin-top: 90px;
+        font-size: 150%;
+        /* Incrementa el tamaño en porcentaje */
     }
-    
+
+    #boton-modo button {
+        top: 17px;
+        left: 390px;
+        font-size: xx-large;
+    }
+
+
 
     .recurso-card {
         font-size: xx-large;
         width: 280px;
-        height: 180px;}
+        height: 180px;
+    }
 }
-
-
-

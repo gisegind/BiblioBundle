@@ -1,5 +1,4 @@
 //*************MENÚ HAMBURGUESA MOBILE ***************/
-
 function mobileHamburguesa() {
     //obtengo por ID el ícono y la lista del nav
     const hamburguesaIcono = document.getElementById("icono-hamburguesa");

@@ -3,102 +3,76 @@
         "autor": "Alan Tuning",
         "frase": "Las máquinas pueden hacer todo lo que podamos describir de manera precisa."
     },
-
     {
         "autor": "Linus Torvalds",
         "frase": "Hablar es fácil. Muéstrame el código."
     },
-
     {
         "autor": "Edsger W. Dijkstra",
         "frase": "La prueba es el acto de probar que el código no tiene errores evidentes."
     },
-
     {
         "autor": "Chris Coyier",
         "frase": "La programación es como el arte, se trata de crear algo desde la nada."
     },
-
     {
         "autor": "Robert C. Martin",
         "frase": "Es más fácil programar cuando entiendes lo que estás haciendo."
     },
-
     {
         "autor": "Linus Torvalds",
         "frase": "El software es como el amor: es mejor cuando es libre."
     },
-
     {
         "autor": "Bjarne Stroustrup",
         "frase": "La programación es el arte de pensar."
     },
-
     {
         "autor": "Steve McConnell",
         "frase": "Cualquier cosa que se pueda programar, puede ser programada de manera más sencilla."
     },
-    
     {
         "autor": "Robert C. Martin",
         "frase": "Un buen programador es alguien que sabe cómo resolver un problema, no como hacerlo funcinar."
     },
-
     {
         "autor": "Donald Knuth",
         "frase": "La optimización prematura es la raíz de todos los males."
     },
-
     {
         "autor": "Steve Jobs",
         "frase": "El diseño no es solo cómo se ve o cómo se siente. El diseño es cómo funciona."
     },
-
     {
         "autor": "Bill Gates",
         "frase": "El software es una gran combinación entre arte e ingeniería."
     },
-
     {
         "autor": "Ada Lovelace",
         "frase": "El cerebro analiza, compara y combina ideas con habilidad matemática."
     },
-
     {
         "autor": "Margaret Hamilton",
         "frase": "El software nunca falla; falla la comprensión humana del software."
     },
-
     {
         "autor": "Dennis Ritchie",
         "frase": "La simplicidad es la clave de un diseño brillante."
     },
-
     {
         "autor": "Guido Van Rossum",
         "frase": "El código es como el humor. Si tienes que explicarlo, no es tan bueno."
     },
-
     {
         "autor": "Kent Beck",
         "frase": "El software se encuentra en una etapa en la que los errores son costosos, por lo que la calidad del código es muy importante."
-        
     },
     {
         "autor": "Michael Feathers",
         "frase": "Los mejores programadores no escriben el código más rápido, escriben el código más limpio."
-        
     },
-
     {
         "autor": "Alan Kay",
         "frase": "La mejor forma de predecir el futuro es inventarlo."
-        
     }
-
-       
-
 ]
-
-
-    
